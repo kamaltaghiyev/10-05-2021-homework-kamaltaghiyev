@@ -12,6 +12,7 @@ public class Company {
     public void hireAll(List<Employee> addList){
         for (Employee employeeName:addList){
             int salary = employeeName.getMonthSalary();
+
             list.add(employeeName);
         }
     }
@@ -22,7 +23,7 @@ public class Company {
         }
     }
     List<Employee> getTopSalaryStaff(int count){
-        
+        return Collections.max(getMonthSalary);
     }
 
 

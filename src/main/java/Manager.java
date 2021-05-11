@@ -9,11 +9,13 @@ public class Manager implements Employee{
 
     @Override
     public void onFire() {
+        
         System.out.println("Manager is fired" +employeeName);
     }
 
     @Override
     public void onHire() {
+        this.employeeName=employeeName;
         System.out.println("Employee is hired as manager" +employeeName);
     }
 }
